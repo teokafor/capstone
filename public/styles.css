@@ -1,4 +1,9 @@
 .TEMP-inline-flex {
-    display:inline-flex;
+    display:flex;
     margin: 5px 0 5px 0;
+    align-items: center;
+}
+
+button {
+    height: 25px;
 }

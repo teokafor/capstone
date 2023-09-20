@@ -23,7 +23,8 @@
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
     <!--Load JS-->
-    <script src="main.js" defer type="module"></script>
+    <script src="index.js" defer type="module"></script>
+    <script src="func.js" defer type="module"></script>
     <!--Load CSS-->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -38,7 +39,36 @@
     <input type="button" id="log-btn" value="Log In">
   </form>
 
-  <div></div>
+
+
+  <!--This is technically controller.-->
+  <!--Sign-in switch-->
+  <div class="TEMP-inline-flex">
+    <p>Sign in as:</p>
+    <input type="text" id="user-choice">
+
+  </div>
+
+  <!--Profile switch-->
+  <div class="TEMP-inline-flex" id="sign-in-pane">
+    <p>View profile of:</p>
+    <button id="spoofedUID1" class="view-profile">profile1</button>
+    <button id="spoofedUID2" class="view-profile">profile2</button>
+    <button id="spoofedUID3" class="view-profile">profile3</button>
+    <p id="cur-view-id-text"></p>
+  </div>
+
+  <div id="post-box" hidden>
+    <p>Write post:</p>
+    <select>
+      <option>Artist</option>
+      <option>Album</option>
+      <option>Song</option>
+    </select>
+    <textarea></textarea>
+    <button>Post</button>
+  </div>
+
 
   </body>
 </html>
